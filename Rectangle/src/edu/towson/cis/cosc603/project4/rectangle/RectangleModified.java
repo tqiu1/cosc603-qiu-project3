@@ -27,12 +27,9 @@ public class RectangleModified {
 	 * @return the area
 	 */
 	public Double getArea() {
-		Double area=Math.abs((p2.x - p1.x) * (p2.y - p1.y));
-		System.out.println("p1.x = "+p1.x);
-		System.out.println("p1.y = "+p1.y);
-		System.out.println("p2.x = "+p2.x);
-		System.out.println("p2.y = "+p2.y);
-		System.out.println("Area = "+area);
+		Double length=p2.x - p1.x;
+		Double width=p2.y - p1.y;
+		Double area=Math.abs(length * width);
 		return area;
 	}
 	
@@ -42,12 +39,9 @@ public class RectangleModified {
 	 * @return the diagonal
 	 */
 	public Double getDiagonal() {
-		Double diagonal=Math.sqrt(Math.pow((p2.x - p1.x), 2) + Math.pow((p2.y - p1.y), 2));
-		System.out.println("p1.x = "+p1.x);
-		System.out.println("p1.y = "+p1.y);
-		System.out.println("p2.x = "+p2.x);
-		System.out.println("p2.y = "+p2.y);
-		System.out.println("Diagonal = "+diagonal);
+		Double length=p2.x - p1.x;
+		Double width=p2.y - p1.y;
+		Double diagonal=Math.sqrt(Math.pow(length, 2) + Math.pow(width, 2));
 		return diagonal;
 	}
 }
